@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import Header from '../header/header';
+import Slider from '../slider/slider';
+import Body from '../body/body';
+import Footer from '../footer/footer';
 
 const LandingPage = () => {
   return (
-    <div className="border h-100 w-100 mr-5 bg-light">
-      <h3 className="ml-5 mt-5">...ITGlobers...</h3>
-    </div>
+    <>
+      <Header />
+      <Slider />
+      <Body />
+      <Footer />
+    </>
   );
 };
 
