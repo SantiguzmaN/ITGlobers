@@ -1,5 +1,64 @@
-.headerContainer {
-  height: 10vh;
-  border-style: solid;
-  border-color: black;
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 24px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.navbarItems {
+  background-color: transparent;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+}
+
+.menu {
+	display: none;
+}
+.logo {
+	width: 100px;
+}
+.navbarLeft ul,
+.navbarRight ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+.navbarLeft {
+	display: flex;
+}
+.navbarLeft ul {
+	margin-left: 25vh;
+}
+.navbarLeft ul li a,
+.navbarRight ul li a {
+	text-decoration: none;
+	color: #C7C7C7;
+	border-right: 1px solid #FFFFFF;
+	padding: 30px;
+}
+.navbarLeft ul li a:hover,
+.navbarRight ul li a:hover {
+	border: 1px solid #ACD9B2;
+	color: #ACD9B2;
+}
+.navbarEmail {
+	color: #C7C7C7;
+	font-size: 14px;
+	margin-right: 12px;
+}
+
+@media (max-width: 640px) {
+	.menu {
+		display: block;
+	}
+	.navbarLeft ul {
+		display: none;
+	}
+	.navbarEmail {
+		display: none;
+	}
 }
