@@ -7,13 +7,11 @@ import {
   FooterLink,
   FooterLogo,
   FooterLogo2,
-  SocialNetworks,
   ColumnWOborder
 } from './footerStyles';
 import { FaFacebookF } from 'react-icons/fa';
 import { IoLogoTwitter } from 'react-icons/io';
 import { ImInstagram } from 'react-icons/im';
-import { Grid } from '@material-ui/core';
   
 const Footer = () => {
   return (
