@@ -42,7 +42,6 @@ const Slider = () => {
   const next = () => {
     selectNewImage(selectedIndex, images);
   };
-  console.log(selectedIndex);
 
   return (
     <div className={styles.sliderContainer}>

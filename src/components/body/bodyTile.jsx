@@ -22,12 +22,4 @@ const BodyTile = ({ img , r1, r2, linkText }) => {
   );
 };
 
-// BodyTile.propTypes = {
-//   img: PropTypes.string.isRequired,
-//   r1: PropTypes.string.isRequired,
-//   r2: PropTypes.string.isRequired,
-//   linkText: PropTypes.string.isRequired
-
-// };
-
 export default BodyTile;
