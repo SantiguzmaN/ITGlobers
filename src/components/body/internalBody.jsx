@@ -4,12 +4,10 @@ import { Grid } from '@material-ui/core';
 import { BsArrowRight } from 'react-icons/bs';
 import { ToastContainer, toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import generalAction from '../../actions/generalAction';
-import { addEmail } from '../../actions/generalAction';
 import 'react-toastify/dist/ReactToastify.css';
 
 const InternalBody = () => {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState('');
   const dispatch = useDispatch();
   const emails = useSelector((state) => state.emails);
 
@@ -26,7 +24,6 @@ const InternalBody = () => {
     if (email.match(ExpRegEmail) != null){
       setEmail('');
       addEmail();
-      console.log(emails);
       toast.success('Suscripcion Exitosa!', {
         position: 'top-center',
         autoClose: 5000,
@@ -127,8 +124,8 @@ const InternalBody = () => {
       />
       {emails.map((item, i) => {
         return (
-          <Grid className={styles.emailsContainer} item xs={12}>
-            <span className={styles.addedEmails}>Usuario: {i+1} , E-mail: {item} </span>
+          <Grid key={i} className={styles.emailsContainer} item xs={12}>
+            <span className={styles.addedEmails}>Usuario: {i+1} , E-mail: {item}</span>
           </Grid>
         );
       })}

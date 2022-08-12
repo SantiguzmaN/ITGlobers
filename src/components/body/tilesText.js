@@ -18,6 +18,5 @@ export const TilesText = [
     r1: 'Alguna vez has usado uno mientras viajas??',
     r2: 'Te lo recomendamos!',
     linkText: ' MAS INFO'
-
   }
 ];

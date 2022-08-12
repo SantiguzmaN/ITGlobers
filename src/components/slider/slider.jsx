@@ -32,7 +32,6 @@ const Slider = () => {
       setSelectedImage(images[nextIndex]);
       setSelectedIndex(nextIndex);
     }, 250);
- 
   };
 
   const previous = () => {
@@ -61,7 +60,6 @@ const Slider = () => {
       <Dots images={images} activeIndex={selectedIndex} />
       <Title/>
       <SliderButton />
-
     </div>
   );
 };

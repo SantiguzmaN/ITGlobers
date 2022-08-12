@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import styles from './body.module.scss';
 import { BsChevronRight } from 'react-icons/bs';
