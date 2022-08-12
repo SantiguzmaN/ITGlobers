@@ -3,9 +3,9 @@ import styles from './slider.module.scss';
 
 const SliderButton = () => {
   return (
-    <button className={styles.sliderButtonContainer}>
-      SHOP
-    </button>
+    <div className={styles.sliderButtonContainer}>
+      <button>SHOP</button>
+    </div>
   );
 };
 

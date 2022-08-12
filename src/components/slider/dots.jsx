@@ -11,7 +11,7 @@ const Dot = styled.img`
   ${console.log(props => props.active)}
 `;
 
-const Dots = ({ images , activeIndex}) => (
+const Dots = ({ images , activeIndex }) => (
   <div className={styles.dotsPanel}>
     {images.map((slide, i) => (
       <Dot key={slide} active={activeIndex === i} />

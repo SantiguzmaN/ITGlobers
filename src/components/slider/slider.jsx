@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './slider.module.scss';
 import Header from '../header/header';
 import styled from 'styled-components';
@@ -9,7 +9,6 @@ import leftArrow from './img/left-arrow.svg';
 import rightArrow from './img/right-arrow.svg';
 
 const SliderImg = styled.img`
-  max-width: 100vw;
   width: 100vw;
   height: auto;
   opacity: 0;
@@ -61,10 +60,6 @@ const Slider = () => {
         <img src={rightArrow} alt="next" />
       </button>
       <Dots images={images} activeIndex={selectedIndex} />
-      <button className={styles.arrowRigth} onClick={next}>
-        <img src={rightArrow} alt="next" />
-      </button>
-
       <Title/>
       <SliderButton />
 

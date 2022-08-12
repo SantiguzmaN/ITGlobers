@@ -4,7 +4,7 @@ export const Box = styled.div`
   padding: 20px;
   background: white;
   position: relative;
-  bottom: 0;
+  border-top: 4px solid #a5aab0;
   left: 0;
   width: 100%;
   display: flex;
@@ -17,15 +17,17 @@ export const Container = styled.div`
   flex: auto;
   flex-direction: column;
   justify-content: space-between;
+  bottom: 0px;
   max-width: 1000px;
   margin: 0 auto;
+  
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  border-right: 1px solid black;
+  border-right: 2px solid #a5aab0;
 `;
 
 export const ColumnWOborder = styled.div`
@@ -65,8 +67,4 @@ export const FooterLogo = styled.img`
 
 export const FooterLogo2 = styled.img`
   width: 140px;
-`;
-
-export const SocialNetworks = styled.div`
-  flex-direction: column;
 `;
