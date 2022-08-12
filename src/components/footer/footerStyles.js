@@ -9,7 +9,7 @@ export const Box = styled.div`
   width: 100%;
   display: flex;
   @media (max-width: 1000px) {
-    padding: 70px 30px;
+    padding: 10px;
   }
 `;
 
