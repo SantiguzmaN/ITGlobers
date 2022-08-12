@@ -63,8 +63,16 @@ export const FooterLink = styled.a`
 
 export const FooterLogo = styled.img`
   width: 100px;
+
+  @media (max-width: 1000px) {
+    display:none;
+  }
 `;
 
 export const FooterLogo2 = styled.img`
   width: 140px;
+
+  @media (max-width: 1000px) {
+    width: 100px !important;
+  }
 `;
