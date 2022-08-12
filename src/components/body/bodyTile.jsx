@@ -27,7 +27,7 @@ BodyTile.propTypes = {
   img: PropTypes.string,
   r1: PropTypes.string,
   r2: PropTypes.string,
-  linkText: PropTypes.number
+  linkText: PropTypes.string
 };
 
 export default BodyTile;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './header.module.scss';
 import { MenuItems } from './menuItems';
+import { Grid } from '@material-ui/core';
 
 const Header = () => {
   return (
@@ -8,11 +9,18 @@ const Header = () => {
       <div className={styles.navbarLeft}>
         <img src={`${process.env.PUBLIC_URL}/icon_menu.png`} alt="pufi" className={styles.logo}  />
         <ul>
-          {MenuItems.map((item, index) => {
+          {MenuItems.map((item, i) => {
             return (
-              <li key={index}>
+              <li key={i}>
                 <a className={item.cName} href={item.url}>
-                  {item.Title}
+                  <Grid className={styles.titleContainer} container> 
+                    <Grid className={styles.gridIcon} item xs={12}> 
+                      {item.icon}
+                    </Grid>
+                    <Grid className={styles.gridIcon} item xs={12}>
+                      {item.title}
+                    </Grid>
+                  </ Grid> 
                 </a>
               </li>
             );
