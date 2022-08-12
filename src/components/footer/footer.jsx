@@ -7,14 +7,11 @@ import {
   FooterLink,
   FooterLogo,
   FooterLogo2,
-  SocialNetworks,
   ColumnWOborder
 } from './footerStyles';
 import { FaFacebookF } from 'react-icons/fa';
 import { IoLogoTwitter } from 'react-icons/io';
 import { ImInstagram } from 'react-icons/im';
-
-
   
 const Footer = () => {
   return (
@@ -38,13 +35,14 @@ const Footer = () => {
             <FooterLogo2 src={`${process.env.PUBLIC_URL}/footer2.jpg`} alt ="logo" /> 
           </Column>
           <ColumnWOborder>
-            <FooterLink href="#">SIGUENOS EN</FooterLink>
+            <FooterLink>
+              SIGUENOS EN
+              <FaFacebookF size="20"/>
+              <IoLogoTwitter size="20"/>
+              <ImInstagram size="20"/>
+            </FooterLink>
+            
           </ColumnWOborder>
-          <SocialNetworks>
-            <FaFacebookF className="icon" />
-            <IoLogoTwitter className="icon" />
-            <ImInstagram />
-          </SocialNetworks>
         </Row>
       </Container>
     </Box>

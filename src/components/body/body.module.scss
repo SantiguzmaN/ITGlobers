@@ -1,5 +1,84 @@
+@import '_bodyPlaceholder.scss';
+
 .bodyContainer {
-    height: 200vh;
-    border-style: solid;
-    border-color: black;
+  @extend %alignCenter;
+  position: relative;
+}
+
+.grid{
+  height: 500px;
+  width: 100%;	
+  @extend %alignCenter;
+  
+  img {
+    @extend %fullSize
   }
+}
+
+.secondGrid {
+  height: 200px;
+  @extend %alignCenter;
+
+  img {
+    @extend %fullSize
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.bodyTile {
+  width: 100%;
+  @extend %alignCenter;
+  @extend %fullSize;
+
+  span{
+    @extend %alignCenter;
+    margin-bottom: 0px;
+  }
+
+  img {
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.centered {
+  @extend %alignCenter;
+}
+
+.mtop {
+  padding-top: 40px;
+}
+
+.subTitle {
+  @extend %centerText;
+  padding-top: 100px;
+  font-size: 20px;
+  color: #a5aab0;
+}
+
+.title {
+  @extend %centerText;
+  font-size: 40px;
+  color: black;
+}
+
+.description {
+  @extend %centerText;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.emailsContainer {
+  @extend %centerText;
+}
+.addedEmails {
+  @extend %centerText;
+  @extend %alignCenter;
+  font-size: 15px;
+  color: black;
+}

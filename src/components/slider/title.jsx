@@ -5,7 +5,6 @@ const Title = () => {
   return (
     <div className={styles.titleContainer}>
       <span className={styles.text}>ESTÁR CÓMODO, </span>
-      <br />
       <span className={styles.text}>NUNCA FUE TAN FÁCIL</span>
     </div>
   );
