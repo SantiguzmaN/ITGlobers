@@ -1,22 +1,29 @@
+import { GiUmbrellaBayonet, GiShoppingCart, GiKnapsack, GiRockingChair } from 'react-icons/gi';
+import styles from './header.module.scss';
+
 export const MenuItems = [
   {
-    Title: 'PUFI PUFF',
+    title: 'PUFI PUFF',
     url: '#',
-    cName: 'navLinks'
+    cName: styles.navLinks, 
+    icon: <GiRockingChair size="30" />
   },
   {
-    Title: 'PUFI RAIN',
+    title: 'PUFI RAIN',
     url: '#',
-    cName: 'navLinks'
+    cName: styles.navLinks,
+    icon: <GiUmbrellaBayonet size="30" />
   },
   {
-    Title: 'PUFI CART',
+    title: 'PUFI CART',
     url: '#',
-    cName: 'navLinks'
+    cName: styles.navLinks,
+    icon: <GiShoppingCart size="30" />
   },
   {
-    Title: 'PUFI NAP',
+    title: 'PUFI NAP',
     url: '#',
-    cName: 'navLinks'
+    cName: styles.navLinks,
+    icon: <GiKnapsack size="30" />
   }
 ];

@@ -1,12 +1,13 @@
 nav {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 24px;
+  display: flex;
+	margin-left: 15px;
 }
+
 .navbarItems {
   position: absolute;
   top: 0px;
   left: 0px;
+  width: 100%;
   background-color: transparent;
   align-items: center;
   margin: 0;
@@ -56,13 +57,20 @@ nav {
 .navbarEmail {
 	color: #FFFFFF;
 	font-size: 14px;
-	margin-left: 80px;
+	margin-left: 40px;
 }
 
-@media (max-width: 640px) {
-	.menu {
-		display: block;
-	}
+.navLinks {
+  display: flex;
+	align-items: center;
+}
+
+.gridIcon {
+  display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 950px) {
 	.navbarLeft ul {
 		display: none;
 	}
@@ -71,5 +79,8 @@ nav {
 	}
 	.logo {
 		display: none;
+	}
+  .menu {
+		display: block;
 	}
 }
