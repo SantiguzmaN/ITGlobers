@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid } from '@material-ui/core';
 import styles from './body.module.scss';
 import { BsChevronRight } from 'react-icons/bs';
@@ -20,6 +21,13 @@ const BodyTile = ({ img , r1, r2, linkText }) => {
       </ Grid>      
     </div>
   );
+};
+
+BodyTile.propTypes = {
+  img: PropTypes.string,
+  r1: PropTypes.string,
+  r2: PropTypes.string,
+  linkText: PropTypes.number
 };
 
 export default BodyTile;
